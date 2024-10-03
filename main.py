@@ -67,4 +67,4 @@ if uploaded_image1 is not None and uploaded_image2 is not None:
     
     if st.button("Check Similarity"):
         similarity_score = compute_similarity(image1, image2)
-        st.write(f'Similarity Score: {similarity_score:.4f}')
+        st.write(f'Similarity Score: {similarity_score * 100:.4f}')
